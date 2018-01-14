@@ -1,0 +1,190 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.example.ammar.medica.UserSignUpFragment">
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/user_sign_up_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/your_name"
+        app:met_baseColor="#ffffff"
+        app:met_errorColor="#ff4346"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="#ffffff" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/user_sign_up_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        app:met_baseColor="#ffffff"
+        app:met_errorColor="#ff4346"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="#ffffff" />
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/user_sign_up_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone_number"
+        app:met_baseColor="#ffffff"
+        app:met_errorColor="#ff4346"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="#ffffff" />
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/user_sign_up_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        app:met_baseColor="#ffffff"
+        app:met_errorColor="#ff4346"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="#ffffff" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/user_sign_up_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/confirm_password"
+        app:met_baseColor="#ffffff"
+        app:met_errorColor="#ff4346"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="#ffffff" />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/user_sign_up_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp"
+        android:textAllCaps="true"
+        fancy:fb_borderColor="#ffffff"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="#3e246c"
+        fancy:fb_radius="40dp"
+        fancy:fb_text="sign up"
+        fancy:fb_textGravity="center_horizontal"
+        fancy:fb_textSize="20sp" />
+
+    <RelativeLayout
+        android:id="@+id/or_text_view_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85">
+
+        <TextView
+            android:id="@+id/tvText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/or"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:layout_toStartOf="@id/tvText"
+            android:background="#FFFFFF" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:layout_toEndOf="@id/tvText"
+            android:background="#FFFFFF" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/user_sign_up_facebook_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            fancy:fb_borderColor="#ffffff"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="#3b5998"
+            fancy:fb_fontIconResource="&#xf09a;"
+            fancy:fb_radius="60dp"
+            fancy:fb_text=""
+            fancy:fb_textColor="#ffffff" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/user_sign_up_google_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            fancy:fb_borderColor="#ffffff"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="#d34836"
+            fancy:fb_fontIconResource="&#xf0d5;"
+            fancy:fb_radius="60dp"
+            fancy:fb_text=""
+            fancy:fb_textColor="#ffffff" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/user_sign_up_twitter_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            fancy:fb_borderColor="#ffffff"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="#0084b4"
+            fancy:fb_fontIconResource="&#xf099;"
+            fancy:fb_radius="60dp"
+            fancy:fb_text=""
+            fancy:fb_textColor="#ffffff" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
