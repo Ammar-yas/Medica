@@ -4,16 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/blue_gradient"
     android:orientation="vertical"
     tools:context="com.example.ammar.medica.SignUpActivity">
 
-    <android.support.design.widget.TabLayout
-        android:id="@+id/sign_up_tab_layout"
-        android:layout_width="match_parent"
-        app:tabTextColor="#ffffff"
-        app:tabSelectedTextColor="#36e1f4"
-        android:layout_height="wrap_content" />
 
     <android.support.v4.view.ViewPager
         android:id="@+id/sign_up_pager"

@@ -18,9 +18,9 @@ public class SignUpPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                return new UserSignUpFragment();
+                return new BlankFragment();
             case 1:
-                return new DoctorSignUpFragment();
+                return new BlankFragment2();
         }
         Log.w(FragmentPagerAdapter.class.getSimpleName(), "returning null position error");
         return null;

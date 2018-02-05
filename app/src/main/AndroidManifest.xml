@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
 
-        <!--activity theme material wallpaper NoTitleBar enable full screen-->
+        <!-- activity theme material wallpaper NoTitleBar enable full screen -->
         <activity
             android:name=".LandingActivity"
             android:configChanges="orientation"
@@ -25,7 +25,8 @@
         </activity>
         <activity
             android:name=".SignUpActivity"
-            android:theme="@style/MainTheme"/>
+            android:theme="@style/MainTheme" />
+        <activity android:name=".DoctorHomepage"></activity>
     </application>
 
 </manifest>

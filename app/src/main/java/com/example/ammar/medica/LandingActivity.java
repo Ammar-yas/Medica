@@ -9,6 +9,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.VideoView;
 
 import mehdi.sakout.fancybuttons.FancyButton;
@@ -16,6 +19,13 @@ import mehdi.sakout.fancybuttons.FancyButton;
 public class LandingActivity extends Activity {
 
     VideoView videoView;
+    EditText emailET;
+    EditText passwordET;
+    TextView forgotPasswordTV;
+    Button signInButton;
+    Button signInWithFacebookButton;
+    Button signInWithGoogleButton;
+    TextView signUpTV;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +38,7 @@ public class LandingActivity extends Activity {
         setContentView(R.layout.activity_landing);
 
         //Background Video code and repeat
-        videoView = (VideoView) findViewById(R.id.landing_video_view);
+        videoView = findViewById(R.id.landing_video_view);
         Uri uri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.landing_video);
         videoView.setVideoURI(uri);
         videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
@@ -38,15 +48,16 @@ public class LandingActivity extends Activity {
             }
         });
 
-        FancyButton signUpBtn = findViewById(R.id.btn_sign_up);
-        signUpBtn.setOnClickListener(new View.OnClickListener() {
+        signUpTV = findViewById(R.id.sign_up_TV);
+        signUpTV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(LandingActivity.this, SignUpActivity.class);
-                startActivity(i);
+
+                Intent intent = new Intent(LandingActivity.this,SignUpActivity.class);
+                startActivity(intent);
+
             }
         });
-
 
     }
 
